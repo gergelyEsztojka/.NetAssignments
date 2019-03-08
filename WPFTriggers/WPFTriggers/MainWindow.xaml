@@ -19,22 +19,26 @@
     </Window.Resources>
 
     <Grid>
-        <Button Width="100" Height="70" Style="{StaticResource TriggerStyle}" Content="Trigger"/>
+        <StackPanel>
+            <Button Width="100" Height="70" Style="{StaticResource TriggerStyle}" Content="Trigger"/>
+        </StackPanel>
+
+        <StackPanel>
+            <CheckBox x:Name="redColorCheckBox" Content="Set red as foreground color" Margin="20"/>
+            <TextBlock Name="txtBlock" VerticalAlignment="Center" Text="Event Trigger" FontSize="24" Margin="20">
+                <TextBlock.Style>
+                    <Style>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=redColorCheckBox, Path=IsChecked}" Value="true">
+                                <Setter Property="TextBlock.Foreground" Value="Red"/>
+                                <Setter Property="TextBlock.Cursor" Value="Hand"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+        </StackPanel>
+
         
-        <CheckBox x:Name="redColorCheckBox" Content="Set red as foreground color" Margin="20"/>
-
-        <TextBlock Name="txtBlock" VerticalAlignment="Center" Text="Event Trigger" FontSize="24" Margin="20">
-            <TextBlock.Style>
-                <Style>
-                    <Style.Triggers>
-                        <DataTrigger Binding="{Binding ElementName=redColorCheckBox, Path=IsChecked}" Value="true">
-                            <Setter Property="TextBlock.Foreground" Value="Red"/>
-                            <Setter Property="TextBlock.Cursor" Value="Hand"/>
-                        </DataTrigger>
-                    </Style.Triggers>
-                </Style>
-            </TextBlock.Style>
-        </TextBlock>
-
     </Grid>
 </Window>
