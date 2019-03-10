@@ -8,8 +8,8 @@ namespace CreateClass
 {
     class Employee : Person, ICloneable
     {
-        public decimal Salary { get; set; }
-        public string Profession { get; set; }
+        public decimal Salary;
+        public string Profession;
 
         public Room Room = new Room { RoomNum = 12 };
 

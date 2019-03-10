@@ -8,9 +8,9 @@ namespace CreateClass
 {
     class Person
     {
-        public string Name { get; set; }
-        public DateTime BirthDate { get; set; }
-        public Genders Gender { get; set; }
+        public string Name;
+        public DateTime BirthDate;
+        public Genders Gender;
 
         public override string ToString()
         {
