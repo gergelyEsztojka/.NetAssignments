@@ -11,8 +11,6 @@ namespace SeekAndArchive
             FileInfo searchedFile = new FileInfo(args[0]);
             DirectoryInfo searchedDirectory = new DirectoryInfo(args[1]);
 
-            Console.WriteLine(searchedFile.FullName);
-
             FileInfo datFile = new FileInfo(@"C:\Users\Gery\source\repos\AdvanceSI\DotNet\SI_Assignments\TestingFolder\testingDat.dat");
 
             BinaryReader br = new BinaryReader(datFile.OpenRead());

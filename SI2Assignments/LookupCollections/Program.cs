@@ -18,8 +18,10 @@ namespace LookupCollections
 
             System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("es-ES");
 
-            Console.WriteLine(ListDict["Canadá"]);
-            Console.WriteLine(ListDict["España"]);
+            foreach(DictionaryEntry country in ListDict)
+            {
+                Console.WriteLine(country.Key);
+            }
 
             Console.ReadLine();
         }

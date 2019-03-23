@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "Gener
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeekAndArchive", "SeekAndArchive\SeekAndArchive.csproj", "{1BC446CF-60D4-4F02-A26A-DB33AD7E2690}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegularExpression", "RegularExpression\RegularExpression.csproj", "{7ED8DBF1-4D5E-41C2-8049-20B99288460F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeekAndArchiveAdvanced", "SeekAndArchiveAdvanced\SeekAndArchiveAdvanced.csproj", "{9B88F711-494C-4CB6-8FF7-A7C204958651}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{1BC446CF-60D4-4F02-A26A-DB33AD7E2690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BC446CF-60D4-4F02-A26A-DB33AD7E2690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BC446CF-60D4-4F02-A26A-DB33AD7E2690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED8DBF1-4D5E-41C2-8049-20B99288460F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED8DBF1-4D5E-41C2-8049-20B99288460F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED8DBF1-4D5E-41C2-8049-20B99288460F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED8DBF1-4D5E-41C2-8049-20B99288460F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B88F711-494C-4CB6-8FF7-A7C204958651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B88F711-494C-4CB6-8FF7-A7C204958651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B88F711-494C-4CB6-8FF7-A7C204958651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B88F711-494C-4CB6-8FF7-A7C204958651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
