@@ -40,7 +40,7 @@ namespace SerializePeople
 
         public Person()
         {
-
+             
         }
 
         public Person(string name, DateTime birthDate, Genders gender)
@@ -59,12 +59,10 @@ namespace SerializePeople
 
         public void Serialize(string output)
         {
-            Person personToSerialize = new Person("Bob", new DateTime(2000, 1, 17), Genders.Male);
-
             IFormatter formatter = new BinaryFormatter();
             using (Stream stream = new FileStream(output, FileMode.Create, FileAccess.Write, FileShare.None))
             {
-                formatter.Serialize(stream, personToSerialize);
+                formatter.Serialize(stream, this);
             }
         }
 

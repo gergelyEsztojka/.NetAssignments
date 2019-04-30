@@ -20,7 +20,7 @@ namespace FilePartReaderWithNUnit
 
         public void Setup(string filePath, int fromLine, int toLine)
         {
-            if(toLine < fromLine && fromLine < 1)
+            if(toLine < fromLine || fromLine < 1)
             {
                 throw new ArgumentException("toLine has to be bigger then fromLine and formLine has to bigger then 1");
             }
