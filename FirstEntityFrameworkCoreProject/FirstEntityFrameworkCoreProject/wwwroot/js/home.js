@@ -1,10 +1,15 @@
-﻿const url = "api/users"
+﻿window.onload = function () {
+    getBlogs();
+}
 
+function getBlogs() {
+    fetch("api/blogs", { method: "GET" })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (blogsJson) {
+            let json = JSON.stringify(blogsJson);
+            let blogs = JSON.parse(json);
+        })
+}
 
-fetch(url)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (myJson) {
-        console.log(JSON.stringify(myJson));
-    });

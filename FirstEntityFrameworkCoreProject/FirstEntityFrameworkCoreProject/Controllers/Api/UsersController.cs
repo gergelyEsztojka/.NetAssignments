@@ -30,6 +30,7 @@ namespace FirstEntityFrameworkCoreProject.Controllers
 
             var response = users.Select(u => new 
             {
+                id = u.Id,
                 firstName = u.FirstName,
                 lastName = u.LastName,
                 posts = u.Posts.Select(p => p.Content)
