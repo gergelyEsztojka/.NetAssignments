@@ -21,7 +21,7 @@ namespace FirstEntityFrameworkCoreProject.Controllers.Api
 
         // GET api/blogs
         [HttpGet]
-        public async Task<IActionResult> GetAllBlogs()
+        public async Task<IActionResult> GetAllBlogsAsync()
         {
             var blogs = await _context.Blogs
                 .Include(b => b.Posts)

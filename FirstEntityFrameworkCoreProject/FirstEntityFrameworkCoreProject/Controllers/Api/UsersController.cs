@@ -22,7 +22,7 @@ namespace FirstEntityFrameworkCoreProject.Controllers
 
         // GET api/users
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAllUsersAsync()
         {
             var users = await _context.Users
                 .Include(u => u.Posts)

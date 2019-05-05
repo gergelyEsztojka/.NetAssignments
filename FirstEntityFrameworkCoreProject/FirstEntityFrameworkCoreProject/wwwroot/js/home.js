@@ -8,8 +8,7 @@ function getBlogs() {
             return response.json();
         })
         .then(function (blogsJson) {
-            let json = JSON.stringify(blogsJson);
-            let blogs = JSON.parse(json);
+            console.log(blogsJson[0]);
         })
 }
 

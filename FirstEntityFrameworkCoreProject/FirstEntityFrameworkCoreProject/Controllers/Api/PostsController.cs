@@ -21,7 +21,7 @@ namespace FirstEntityFrameworkCoreProject.Controllers.Api
 
         // GET api/posts
         [HttpGet]
-        public async Task<IActionResult> GetAllPosts()
+        public async Task<IActionResult> GetAllPostsAsync()
         {
             var posts = await _context.Posts
                 .Include(p => p.User)
